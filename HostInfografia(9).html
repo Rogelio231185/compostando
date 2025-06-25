@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Composta - Proyecto Conalep Cuautla</title>
+    <script>
+        window.onload = function() {
+            alert("¡Conoce nuestro proyecto de Composta!");
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #e8f5e9, #f1f8e9);
+            margin: 0;
+            padding: 0;
+            color: #2e2e2e;
+        }
+        table {
+            width: 100%;
+            height: 100vh;
+            border-collapse: collapse;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .menu-lateral {
+            width: 30%;
+            background-color: #a5d6a7;
+            padding: 30px 20px;
+            vertical-align: top;
+            border-right: 3px solid #689f38;
+            box-shadow: inset -5px 0 10px rgba(0,0,0,0.1);
+        }
+        .logo-container {
+            text-align: center;
+        }
+        .logo-container img {
+            width: 200px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .logo-container h2 {
+            margin-top: 10px;
+            color: #1b5e20;
+            font-size: 22px;
+            background-color: #c8e6c9;
+            border-radius: 8px;
+            padding: 5px;
+            display: inline-block;
+        }
+        .menu-lista {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+        .menu-lista li {
+            margin-bottom: 12px;
+        }
+        .menu-lista a {
+            text-decoration: none;
+            color: #004d40;
+            font-weight: bold;
+            background-color: #b2dfdb;
+            padding: 8px 12px;
+            border-radius: 10px;
+            display: inline-block;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .menu-lista a:hover {
+            background-color: #00796b;
+            color: #ffffff;
+            transform: scale(1.05);
+        }
+        .contacto {
+            margin-top: 25px;
+        }
+        .contacto h3 {
+            color: #1b5e20;
+            border-bottom: 2px solid #4caf50;
+            padding-bottom: 5px;
+        }
+        .contacto p,
+        .contacto a {
+            color: #33691e;
+            text-decoration: none;
+            margin: 4px 0;
+        }
+        .contacto a:hover {
+            text-decoration: underline;
+            color: #558b2f;
+        }
+        .conocenos {
+            margin-top: 25px;
+            font-weight: bold;
+            background-color: #ffccbc;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .conocenos a {
+            color: #d84315;
+            text-decoration: none;
+        }
+        .conocenos a:hover {
+            text-decoration: underline;
+            color: #bf360c;
+        }
+        .contenido-principal {
+            width: 70%;
+            background-color: #ffffff;
+            padding: 40px;
+            vertical-align: top;
+            border-left: 3px solid #aed581;
+        }
+        .contenido-principal h1 {
+            color: #33691e;
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .contenido-principal h2 {
+            margin-top: 30px;
+            color: #558b2f;
+            text-align: center;
+        }
+        .pdf-container {
+            width: 100%;
+            height: 800px; /* Ajusta esta altura según necesites para el PDF */
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden; /* Asegura que el PDF no se desborde */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .pdf-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .btn-regresar {
+            display: inline-block;
+            background-color: #81c784;
+            color: #1b5e20;
+            padding: 10px 20px;
+            border-radius: 12px;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 16px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+            margin-top: 30px;
+            text-align: center;
+        }
+        .btn-regresar:hover {
+            background-color: #66bb6a;
+            color: white;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header style="background-color: #81c784; padding: 20px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+        <h1 style="margin: 0; font-size: 32px; color: #1b5e20;">🌱 Proyecto oCmposta - Conalep Cuautla 🌱</h1>
+        <p style="color: #2e7d32;">Descubre cómo transformamos residuos en vida</p>
+        <a href="CSSEmpecemos(6).html" class="btn-regresar">⬅️ Regresar a la página anterior</a>
+    </header>
+
+    <table>
+        <tr>
+            <td class="menu-lateral">
+                <div class="logo-container">
+                    <a href="CSSInicio(1).html"><img src="Image/Logo1.JPG" alt="log"></a>
+                    <h2>🌿 Bienvenidos 🌿</h2>
+                </div>
+                <ul class="menu-lista">
+                    <li><a href="CSSIneed(2).html">▶ ¿QUÉ NECESITO?</a></li>
+                    <li><a href="CSSBeneficios(3).html">▶ BENEFICIOS DE LA COMPOSTA</a></li>
+                    <li><a href="CSSMantenimiento(4).html">▶ MANTENIMIENTO</a></li>
+                    <li><a href="CSSForm(4.5).html">▶ QUE TAL TE VA?</a></li>
+                    <li><a href="CSSPregFrecs(5).html">▶ PREGUNTAS Y RESPUESTAS</a></li>
+                    <li><a href="CSSComenzar(6).html">▶ EMPECEMOS</a></li>
+                    <li><strong>▶ PROYECTO LOMBRICOMPOSTA</strong></li>
+                </ul>
+                <div class="contacto">
+                    <h3>CONTÁCTANOS</h3>
+                    <p>📧 <a href="mailto:jairojael274@gmail.com">jairojael274@gmail.com</a></p>
+                    <p>📷 <a href="https://www.instagram.com/jiro.gpt/">Jiro.Gpt</a></p>
+                    <p>📞 <a href="http://wa.me/7352722995">7352722995</a></p>
+                </div>
+                <div class="conocenos">
+                    <p>¿QUIERES CONOCERNOS?<br><a href="CSSConocenos(7).html">>>>CLIC AQUI<<<</a></p>
+                </div>
+            </td>
+
+            <td class="contenido-principal">
+                <h1>Detalles del Proyecto de Composta</h1>
+                <p style="text-align: center; font-size: 1.1em; line-height: 1.6;">
+                    Aquí te presentamos la información detallada de nuestro proyecto de Lombricomposta, desarrollado con el fin de fomentar la conciencia ambiental y el manejo adecuado de residuos orgánicos en nuestra comunidad.
+                </p>
+
+                <div class="pdf-container">
+                    <iframe src="Proyecto2025.pdf" title="Proyecto de Lombricomposta"></iframe>
+                </div>
+
+                <p style="text-align: center; margin-top: 30px; font-size: 1.1em; font-weight: bold;">
+                    ¡Esperamos que esta información sea de gran utilidad y te inspire a unirte a la causa!
+                </p>
+            </td>
+        </tr>
+    </table>
+
+    <button id="btnSubir" title="Subir arriba">⬆️</button>
+
+    <script>
+        window.onscroll = function () {
+            const btn = document.getElementById("btnSubir");
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+        document.getElementById("btnSubir").onclick = function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        };
+    </script>
+
+    <style>
+        #btnSubir {
+            display: none;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            background-color: #66bb6a;
+            color: white;
+            border: none;
+            outline: none;
+            padding: 12px 16px;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: background-color 0.3s ease;
+        }
+
+        #btnSubir:hover {
+            background-color: #388e3c;
+        }
+    </style>
+    <footer style="background-color: #a5d6a7; padding: 15px; text-align: center; border-top: 3px solid #689f38; box-shadow: 0 -2px 6px rgba(0,0,0,0.1);">
+        <p style="margin: 5px; color: #1b5e20; font-weight: bold;">Conalep Cuautla 173 - Informática & Protección Civil</p>
+        <p style="margin: 0; color: #2e7d32;">© 2025 Todos los derechos reservados | Diseñado por estudiantes comprometidos con el medio ambiente 🌍</p>
+    </footer>
+
+</body>
+</html>

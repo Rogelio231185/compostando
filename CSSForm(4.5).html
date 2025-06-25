@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario - Compostando</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e8f5e9, #f1f8e9);
+      margin: 0;
+      padding: 0;
+      color: #2e2e2e;
+    }
+    .contenedor {
+      width: 100%;
+      height: 100vh;
+      border-collapse: collapse;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    .menu-lateral {
+      width: 30%;
+      background-color: #a5d6a7;
+      padding: 30px 20px;
+      vertical-align: top;
+      border-right: 3px solid #689f38;
+      box-shadow: inset -5px 0 10px rgba(0,0,0,0.1);
+    }
+    .logo-container {
+      text-align: center;
+    }
+    .logo-container img {
+      width: 200px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .logo-container h2 {
+      margin-top: 10px;
+      color: #1b5e20;
+      font-size: 22px;
+      background-color: #c8e6c9;
+      border-radius: 8px;
+      padding: 5px;
+      display: inline-block;
+    }
+    .menu-lista {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+    .menu-lista li {
+      margin-bottom: 12px;
+    }
+    .menu-lista a {
+      text-decoration: none;
+      color: #004d40;
+      font-weight: bold;
+      background-color: #b2dfdb;
+      padding: 8px 12px;
+      border-radius: 10px;
+      display: inline-block;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+    .menu-lista a:hover {
+      background-color: #00796b;
+      color: #ffffff;
+      transform: scale(1.05);
+    }
+    .contacto {
+      margin-top: 25px;
+    }
+    .contacto h3 {
+      color: #1b5e20;
+      border-bottom: 2px solid #4caf50;
+      padding-bottom: 5px;
+    }
+    .contacto p,
+    .contacto a {
+      color: #33691e;
+      text-decoration: none;
+      margin: 4px 0;
+    }
+    .contacto a:hover {
+      text-decoration: underline;
+      color: #558b2f;
+    }
+    .conocenos {
+      margin-top: 25px;
+      font-weight: bold;
+      background-color: #ffccbc;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .conocenos a {
+      color: #d84315;
+      text-decoration: none;
+    }
+    .conocenos a:hover {
+      text-decoration: underline;
+      color: #bf360c;
+    }
+    .contenido-principal {
+      width: 70%;
+      background-color: #ffffff;
+      padding: 40px;
+      vertical-align: top;
+      border-left: 3px solid #aed581;
+    }
+    h1 {
+      color: #33691e;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    table {
+      width: 100%;
+    }
+    table td {
+      padding: 10px;
+      vertical-align: top;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+    input[type="submit"] {
+      background-color: #689f38;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s;
+    }
+    input[type="submit"]:hover {
+      background-color: #558b2f;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <header style="background-color: #81c784; padding: 20px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+  <h1 style="margin: 0; font-size: 32px; color: #1b5e20;">🌱 Proyecto Composta - Conalep Cuautla 🌱</h1>
+  <p style="color: #2e7d32;">Creando conciencia ecológica desde la comunidad estudiantil</p>
+</header>
+
+  <table class="contenedor">
+    <tr>
+      <td class="menu-lateral">
+        <div class="logo-container">
+          <a href="CSSInicio(1).html">
+            <img src="Image/Logo1.JPG" alt="log">
+          </a>
+          <h2>🌿 Bienvenidos 🌿</h2>
+        </div>
+        <ul class="menu-lista">
+          <li><a href="CSSInicio(1).html">▶ INICIO</a></li>
+          <li><a href="CSSBeneficios(3).html">▶ BENEFICIOS DE LA COMPOSTA</a></li>
+          <li><a href="CSSMantenimiento(4).html">▶ MANTENIMIENTO</a></li>
+          <li><strong>▶ QUE TAL TE VA?</strong></li>
+          <li><a href="CSSPregFrecs(5).html">▶ PREGUNTAS Y RESPUESTAS</a></li>
+          <li><a href="CSSEmpecemos(6).html">▶ EMPECEMOS</a></li>
+        </ul>
+        <div class="contacto">
+          <h3>CONTÁCTANOS</h3>
+          <p>📧 Correo</p>
+          <a href="mailto:jairojael274@gmail.com">jairojael274@gmail.com</a>
+          <p>📷 Instagram</p>
+          <a href="https://www.instagram.com/jiro.gpt/">Jiro.Gpt</a>
+          <p>📞 WhatsApp</p>
+          <a href="http://wa.me/7352722995">7352722995</a>
+        </div>
+        <div class="conocenos">
+          <p><strong>¿QUIERES CONOCERNOS?</strong><br>
+          <a href="CSSConocenos(7).html">>>>CLIC AQUI<<<</a></p>
+        </div>
+      </td>
+
+      <td class="contenido-principal">
+        <h1>Formulario de Composta</h1>
+        <form id="formComposta" action="procesar.php" method="post">
+          <table cellpadding="8">
+            <tr>
+              <td><strong>Nombre:</strong></td>
+              <td><input type="text" name="nombre" id="nombre"></td>
+            </tr>
+            <tr>
+              <td><strong>Correo Gmail:</strong></td>
+              <td><input type="email" name="correo" id="correo" placeholder="tucorreo@gmail.com"></td>
+            </tr>
+            <tr>
+              <td><strong>¿Desde dónde nos visitas?</strong></td>
+              <td><input type="text" name="procedencia" id="procedencia" placeholder="Ciudad, estado o país"></td>
+            </tr>
+            <tr>
+              <td><strong>Ubicación:</strong></td>
+              <td>
+                <select name="ubicacion" id="ubicacion">
+                  <option value="">Selecciona...</option>
+                  <option value="ciudad">Área urbana</option>
+                  <option value="campo">Área rural</option>
+                  <option value="escuela">Escuela/comunidad</option>
+                  <option value="cuautla">Cuautla Morelos</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Tipo de composta:</strong></td>
+              <td>
+                <input type="radio" name="tipo" value="domestica"> Doméstica<br>
+                <input type="radio" name="tipo" value="comunitaria"> Comunitaria<br>
+                <input type="radio" name="tipo" value="escolar"> Escolar<br>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Materiales usados:</strong></td>
+              <td>
+                <input type="checkbox" name="materiales[]" value="frutas" class="material"> Frutas/verduras<br>
+                <input type="checkbox" name="materiales[]" value="hojas" class="material"> Hojas secas<br>
+                <input type="checkbox" name="materiales[]" value="cafe" class="material"> Café/cáscaras de huevo
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Fecha inicio:</strong></td>
+              <td><input type="date" name="fecha" id="fecha"></td>
+            </tr>
+            <tr>
+              <td colspan="2" align="center">
+                <input type="submit" value="Enviar Datos">
+              </td>
+            </tr>
+          </table>
+        </form>
+      </td>
+    </tr>
+  </table>
+
+  <script>
+    document.getElementById("formComposta").addEventListener("submit", function(e) {
+      e.preventDefault(); // Evita envío automático
+
+      const nombre = document.getElementById("nombre").value.trim();
+      const correo = document.getElementById("correo").value.trim();
+      const procedencia = document.getElementById("procedencia").value.trim();
+      const ubicacion = document.getElementById("ubicacion").value;
+      const tipoSeleccionado = document.querySelector('input[name="tipo"]:checked');
+      const materiales = document.querySelectorAll('.material:checked');
+      const fecha = document.getElementById("fecha").value;
+
+      if (!nombre) {
+        alert("Por favor, escribe tu nombre.");
+        return;
+      }
+
+      const correoRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+      if (!correo || !correoRegex.test(correo)) {
+        alert("Por favor, ingresa un correo de Gmail válido.");
+        return;
+      }
+
+      if (!procedencia) {
+        alert("Indica desde dónde nos visitas.");
+        return;
+      }
+
+      if (!ubicacion) {
+        alert("Selecciona una ubicación.");
+        return;
+      }
+
+      if (!tipoSeleccionado) {
+        alert("Selecciona un tipo de composta.");
+        return;
+      }
+
+      if (materiales.length === 0) {
+        alert("Selecciona al menos un material usado.");
+        return;
+      }
+
+      if (!fecha) {
+        alert("Selecciona una fecha de inicio.");
+        return;
+      }
+
+      alert("✅ La información se ha enviado correctamente.");
+      this.submit(); // Envío del formulario
+    });
+  </script>
+  <button id="btnSubir" title="Subir arriba">⬆️</button>
+
+    <script>
+        window.onscroll = function () {
+            const btn = document.getElementById("btnSubir");
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+        document.getElementById("btnSubir").onclick = function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        };
+    </script>
+
+    <style>
+        #btnSubir {
+            display: none;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            background-color: #66bb6a;
+            color: white;
+            border: none;
+            outline: none;
+            padding: 12px 16px;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: background-color 0.3s ease;
+        }
+
+        #btnSubir:hover {
+            background-color: #388e3c;
+        }
+    </style>
+<footer style="background-color: #a5d6a7; padding: 15px; text-align: center; border-top: 3px solid #689f38; box-shadow: 0 -2px 6px rgba(0,0,0,0.1);">
+  <p style="margin: 5px; color: #1b5e20; font-weight: bold;">Conalep Cuautla 173 - Informática & Protección Civil</p>
+  <p style="margin: 0; color: #2e7d32;">© 2025 Todos los derechos reservados | Diseñado por estudiantes comprometidos con el medio ambiente 🌍</p>
+</footer>
+
+</body>
+</html>
